@@ -66,15 +66,14 @@ A resposta será um JSON com a URL da imagem processada:
 ```
 ### 5. Obtendo a Imagem Processada
 
-Para visualizar a imagem processada, acesse a URL fornecida pela resposta da requisição.
+Após enviar a imagem para o endpoint `/predict`, a imagem será processada e salva na pasta `outputs`. Para recuperar a imagem processada, utilize o endpoint `/outputs/<filename>`, onde `<filename>` é o nome do arquivo gerado.
 
-Exemplo:
+#### Exemplo de URL para acessar a imagem processada:
 
 ```
 http://127.0.0.1:5000/outputs/processed_image.jpg
 ```
-
-A imagem processada conterá caixas delimitadoras desenhadas ao redor dos objetos detectados.
+Esse endpoint retornará a imagem com as caixas delimitadoras desenhadas ao redor dos objetos detectados pelos modelos.
 
 ## Explicação do Código
 
