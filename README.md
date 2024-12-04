@@ -110,6 +110,3 @@ Este endpoint serve as imagens processadas. Quando o usuário acessa a URL forne
   "error": "Arquivo não encontrado"
 }
 ```
-* 
-
-
